@@ -39,10 +39,8 @@ function digitoUnico(n, k) {
         newResult = '';
         newResult = digUnico.toString();
 
-        while (newDig.length) {
-            newDig.pop();
-        }
-
+        newDig.length = 0;
+        
         for (let i in newResult) {
             newDig[i] = parseInt(newResult[i]);
         }
